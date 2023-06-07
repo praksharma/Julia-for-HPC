@@ -22,3 +22,23 @@ pip3 install -U jupyter-book
 jupyter-book create docs/
 ```
 This will create a directory in the ```$PWD``` named ```docs/```. The table of contents are stored in ```_toc.yml``` and the configuration is stored in ```_config.yml```.
+
+4. Building a project
+
+```
+jupyter-book build docs/
+```
+
+For a full rebuild:
+
+```
+jupyter-book build --all docs/
+```
+
+If the toc doesn't update. This will update the entire project.
+
+5. Publish the docs in the new branch
+
+```
+ghp-import -n -p -f docs/_build/html
+```
