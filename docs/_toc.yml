@@ -1,9 +1,14 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
 
+
+
 format: jb-book
 root: intro
 parts:
+  - caption: Installation and Management
+    chapters:
+    - file: Installation_and_management/install
   - caption: Jupyter book minimal
     chapters:
     - file: jupyter-book-template/markdown
