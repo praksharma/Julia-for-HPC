@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Notebooks with MyST Markdown &#8212; My sample book</title>
+    <title>Installation &#8212; My sample book</title>
   
   
   
@@ -61,10 +61,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'jupyter-book-template/markdown-notebooks';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Installation_and_management/install';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Content with notebooks" href="notebooks.html" />
+    <link rel="next" title="Markdown Files" href="../jupyter-book-template/markdown.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -156,16 +157,16 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Installation and Management</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../Installation_and_management/install.html">Installation</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Installation</a></li>
 
 
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyter book minimal</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Notebooks with MyST Markdown</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../jupyter-book-template/markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter-book-template/notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter-book-template/markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
     </div>
@@ -237,7 +238,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fjupyter-book-template/markdown-notebooks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FInstallation_and_management/install.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -267,7 +268,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/jupyter-book-template/markdown-notebooks.md" target="_blank"
+      <li><a href="../_sources/Installation_and_management/install.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -277,7 +278,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -349,7 +350,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Notebooks with MyST Markdown</h1>
+    <h1>Installation</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -359,10 +360,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Installation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#environments">Environments</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-an-environment">Create an environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-packages">Add packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-code">VS code</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#uninstallation">Uninstallation</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -373,51 +380,78 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="notebooks-with-myst-markdown">
-<h1>Notebooks with MyST Markdown<a class="headerlink" href="#notebooks-with-myst-markdown" title="Permalink to this heading">#</a></h1>
-<p>Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks.html">the Notebooks with MyST Markdown documentation</a> for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.</p>
-<section id="an-example-cell">
-<h2>An example cell<a class="headerlink" href="#an-example-cell" title="Permalink to this heading">#</a></h2>
-<p>With MyST Markdown, you can define code cells with a directive like so:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+  <section class="tex2jax_ignore mathjax_ignore" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h1>
+<p>First, one need to download the Julia source binaries. <a class="reference external" href="https://julialang.org/downloads/">Here</a> under the “Generic Linux on x86” download the 64 bit (glibc) version. Extract the files in home directory.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tar</span> <span class="n">zxvf</span> <span class="n">julia</span><span class="o">-</span><span class="n">VERSION</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
+<p>Now the executable is located int eh bin directory. We just need to export the PATH to the executable at the startup of the terminal. Depending on the shell you are using, you need to add the PATH to the relevant config file.</p>
+<p>In my case, I am using ZSH shell, so I will edit <code class="docutils literal notranslate"><span class="pre">.zshrc</span></code>. Add this to the end of the file.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">PATH</span><span class="o">=</span><span class="s2">&quot;$PATH:/home/hell/Julia/bin&quot;</span>
 </pre></div>
 </div>
-</div>
-</div>
-<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.</p>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>Jupyter Book uses <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/">Jupytext</a> to convert text-based files to notebooks, and can support <a class="reference external" href="https://jupyterbook.org/file-types/jupytext.html">many other text-based notebook files</a>.</p>
-</div>
-</section>
-<section id="create-a-notebook-with-myst-markdown">
-<h2>Create a notebook with MyST Markdown<a class="headerlink" href="#create-a-notebook-with-myst-markdown" title="Permalink to this heading">#</a></h2>
-<p>MyST Markdown notebooks are defined by two things:</p>
-<ol class="arabic simple">
-<li><p>YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-See the YAML at the top of this page for example.</p></li>
-<li><p>The presence of <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> directives, which will be executed with your book.</p></li>
-</ol>
-<p>That’s all that is needed to get started!</p>
-</section>
-<section id="quickly-add-yaml-metadata-for-myst-notebooks">
-<h2>Quickly add YAML metadata for MyST Notebooks<a class="headerlink" href="#quickly-add-yaml-metadata-for-myst-notebooks" title="Permalink to this heading">#</a></h2>
-<p>If you have a markdown file and you’d like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">markdownfile</span><span class="o">.</span><span class="n">md</span>
+<p>Now reopen the terminal and type julia to open the Julia REPL.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>╰─<span class="w"> </span>julia
+<span class="w">               </span>_
+<span class="w">   </span>_<span class="w">       </span>_<span class="w"> </span>_<span class="o">(</span>_<span class="o">)</span>_<span class="w">     </span><span class="p">|</span><span class="w">  </span>Documentation:<span class="w"> </span>https://docs.julialang.org
+<span class="w">  </span><span class="o">(</span>_<span class="o">)</span><span class="w">     </span><span class="p">|</span><span class="w"> </span><span class="o">(</span>_<span class="o">)</span><span class="w"> </span><span class="o">(</span>_<span class="o">)</span><span class="w">    </span><span class="p">|</span>
+<span class="w">   </span>_<span class="w"> </span>_<span class="w">   </span>_<span class="p">|</span><span class="w"> </span><span class="p">|</span>_<span class="w">  </span>__<span class="w"> </span>_<span class="w">   </span><span class="p">|</span><span class="w">  </span>Type<span class="w"> </span><span class="s2">&quot;?&quot;</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>help,<span class="w"> </span><span class="s2">&quot;]?&quot;</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>Pkg<span class="w"> </span>help.
+<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span>/<span class="w"> </span>_<span class="sb">`</span><span class="w"> </span><span class="p">|</span><span class="w">  </span><span class="p">|</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span>_<span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="o">(</span>_<span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w">  </span><span class="p">|</span><span class="w">  </span>Version<span class="w"> </span><span class="m">1</span>.9.0<span class="w"> </span><span class="o">(</span><span class="m">2023</span>-05-07<span class="o">)</span>
+<span class="w"> </span>_/<span class="w"> </span><span class="p">|</span><span class="se">\_</span>_<span class="s1">&#39;_|_|_|\__&#39;</span>_<span class="p">|</span><span class="w">  </span><span class="p">|</span><span class="w">  </span>Official<span class="w"> </span>https://julialang.org/<span class="w"> </span>release
+<span class="p">|</span>__/<span class="w">                   </span><span class="p">|</span>
+
+julia&gt;<span class="w"> </span>
 </pre></div>
 </div>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="environments">
+<h1>Environments<a class="headerlink" href="#environments" title="Permalink to this heading">#</a></h1>
+<p>Similar to Python Julia also provides environment with an in-built package manager.</p>
+<section id="create-an-environment">
+<h2>Create an environment<a class="headerlink" href="#create-an-environment" title="Permalink to this heading">#</a></h2>
+<p>To create an environment in the <code class="docutils literal notranslate"><span class="pre">PWD</span></code>.</p>
+<ul class="simple">
+<li><p>Open the Julia REPL and type <code class="docutils literal notranslate"><span class="pre">]</span></code> to enter in the package manager.</p></li>
+<li><p>Create a new environment with <code class="docutils literal notranslate"><span class="pre">activate</span> <span class="pre">.</span></code> in the PWD.</p></li>
+<li><p>We can use the same command the activate the environment.</p></li>
+</ul>
+</section>
+<section id="add-packages">
+<h2>Add packages<a class="headerlink" href="#add-packages" title="Permalink to this heading">#</a></h2>
+<p>You can add packages from <a class="reference external" href="https://juliapackages.com/">https://juliapackages.com/</a> using add command.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>@v1.8<span class="o">)</span><span class="w"> </span>pkg&gt;<span class="w"> </span>add<span class="w"> </span>Images
+<span class="w">   </span>Resolving<span class="w"> </span>package<span class="w"> </span>versions...
+<span class="w">    </span>Updating<span class="w"> </span><span class="sb">`</span>~/.julia/environments/v1.9/Project.toml<span class="sb">`</span>
+<span class="w">  </span><span class="o">[</span>916415d5<span class="o">]</span><span class="w"> </span>+<span class="w"> </span>Images<span class="w"> </span>v0.25.2
+<span class="w">    </span>Updating<span class="w"> </span><span class="sb">`</span>~/.julia/environments/v1.9/Manifest.toml<span class="sb">`</span>
+<span class="w">    </span>...
+Precompiling<span class="w"> </span>environment...
+<span class="w">  </span>Progress<span class="w"> </span><span class="o">[===================</span>&gt;<span class="w">                     </span><span class="o">]</span><span class="w">  </span><span class="m">45</span>/97
+<span class="w">  </span>✓<span class="w"> </span>NaNMath
+<span class="w">  </span>✓<span class="w"> </span>IntervalSets
+<span class="w">  </span>◐<span class="w"> </span>CoordinateTransformations
+<span class="w">  </span>◑<span class="w"> </span>ArnoldiMethod
+<span class="w">  </span>◑<span class="w"> </span>IntegralArrays
+<span class="w">  </span>◒<span class="w"> </span>RegionTrees
+<span class="w">  </span>◐<span class="w"> </span>ChangesOfVariables
+<span class="w">  </span>◓<span class="w"> </span>PaddedViews
+</pre></div>
+</div>
+</section>
+<section id="vs-code">
+<h2>VS code<a class="headerlink" href="#vs-code" title="Permalink to this heading">#</a></h2>
+<p>Julia nicely integrates with VS Code <a class="reference external" href="https://code.visualstudio.com/docs/languages/julia">extension</a>.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="uninstallation">
+<h1>Uninstallation<a class="headerlink" href="#uninstallation" title="Permalink to this heading">#</a></h1>
+<p>The uninstallation is very simple.</p>
+<ul class="simple">
+<li><p>Remove the packages: <code class="docutils literal notranslate"><span class="pre">/home/hell/.julia</span></code></p></li>
+<li><p>Remove the binaries: <code class="docutils literal notranslate"><span class="pre">/home/hell/Julia/</span></code></p></li>
+</ul>
 </section>
 
     <script type="text/x-thebe-config">
@@ -433,7 +467,7 @@ See the YAML at the top of this page for example.</p></li>
         },
         kernelOptions: {
             name: "python3",
-            path: "./jupyter-book-template"
+            path: "./Installation_and_management"
         },
         predefinedOutput: true
     }
@@ -452,13 +486,22 @@ See the YAML at the top of this page for example.</p></li>
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="notebooks.html"
+       href="../intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Content with notebooks</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="../jupyter-book-template/markdown.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Markdown Files</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -478,10 +521,16 @@ See the YAML at the top of this page for example.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Installation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#environments">Environments</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-an-environment">Create an environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-packages">Add packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-code">VS code</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#uninstallation">Uninstallation</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>
