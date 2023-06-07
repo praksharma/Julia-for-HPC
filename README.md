@@ -42,3 +42,14 @@ If the toc doesn't update. This will update the entire project.
 ```
 ghp-import -n -p -f docs/_build/html
 ```
+
+6. Deploy website
+Go to "Settings->Pages" of the repo. Set the "Source" to "Deploy from a branch". In the "Branch", select the "gh-pages" branch and location as the "/root".
+
+7. GitHub pages force build
+GitHub pages is known for its laziness. To force deploy the website go to "Setting->Pages". Here, search for the following line:
+
+> Your site was last deployed to the github-pages environment by the pages build and deployment workflow.
+
+Click on "pages build and deployment" and click on the button "Re-run all jobs" on the top right corner.
+
