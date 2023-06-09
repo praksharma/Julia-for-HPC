@@ -1,4 +1,7 @@
 # Julia-for-HPC
+
+[![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](<https://praksharma.github.io/Julia-for-HPC/>)
+
 The repo contains docs for using Julia with HPC for machine learning.
 
 ## Jupyter-book
