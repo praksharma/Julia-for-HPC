@@ -56,3 +56,6 @@ GitHub pages is known for its laziness. To force deploy the website go to "Setti
 
 Click on "pages build and deployment" and click on the button "Re-run all jobs" on the top right corner.
 
+## Julia kernel and Jupyter books
+It is really tricky to compile notebooks written in Julia. One of my homie created [this](https://compwa-org.readthedocs.io/develop.html#ijulia-notebooks) nice docs for us. 
+

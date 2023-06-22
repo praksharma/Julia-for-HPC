@@ -9,6 +9,9 @@ parts:
   - caption: Installation and Management
     chapters:
     - file: Installation_and_management/install
+  - caption: Julia Basics
+    chapters:
+    - file: basics/1. basic operations and functions.ipynb
   - caption: Jupyter book minimal
     chapters:
     - file: jupyter-book-template/markdown
